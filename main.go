@@ -13,20 +13,17 @@ import (
 	"os"
 
 	"github.com/golang/freetype"
+	"golang.org/x/image/font"
 )
 
 var (
-	dpi      = flag.Float64("dpi", 300, "screen resolution in Dots Per Inch")
+	dpi      = flag.Float64("dpi", 300, "resolution in Dots Per Inch")
 	fontfile = flag.String("fontfile", "FZHTJW.TTF", "filename of the ttf font")
 	hinting  = flag.String("hinting", "none", "none | full")
 	size     = flag.Float64("size", 300, "font size in points")
 	spacing  = flag.Float64("spacing", 1.5, "line spacing (e.g. 2 means double spaced)")
 	wonb     = flag.Bool("whiteonblack", false, "white text on a black background")
 )
-
-var text = []string{
-	"A",
-}
 
 func makeFlashCard(cardFileName, text string) {
 	// Read the font data.
@@ -57,12 +54,12 @@ func makeFlashCard(cardFileName, text string) {
 	c.SetClip(rgba.Bounds())
 	c.SetDst(rgba)
 	c.SetSrc(fg)
-	/* switch *hinting {
+	switch *hinting {
 	default:
 		c.SetHinting(font.HintingNone)
 	case "full":
 		c.SetHinting(font.HintingFull)
-	} */
+	}
 
 	// Draw the guidelines.
 	for i := 0; i < 200; i++ {
