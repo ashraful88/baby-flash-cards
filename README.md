@@ -11,3 +11,20 @@ Then run
 `go run main.go`
 
 output directory should have all .png files
+
+
+
+
+### TODO:
+
+  Alpha Numetic Wrting Wordsheet
+  
+  Alpha Numeric Baby Coloring Pages
+  
+  Word Families baby cards
+  
+  Word Families Coloring pages
+  
+  Kids Crossword Puzzle
+  
+  Kids Sudoku
