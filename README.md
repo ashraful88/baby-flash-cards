@@ -14,17 +14,16 @@ output directory should have all .png files
 
 
 
-
 ### TODO:
 
-  Alpha Numetic Wrting Wordsheet
-  
-  Alpha Numeric Baby Coloring Pages
-  
-  Word Families baby cards
-  
-  Word Families Coloring pages
-  
-  Kids Crossword Puzzle
-  
-  Kids Sudoku
+  Alphanumeric writing worksheet generator
+ 
+  Alphanumeric baby coloring page generator
+ 
+  Word families baby cards generator
+ 
+  Word families coloring page generator
+ 
+  Kids crossword puzzle generator
+ 
+  Kids sudoku generator
